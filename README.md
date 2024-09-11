@@ -18,3 +18,11 @@ Developer's Dojo is developed for specific languages rather than a generalized s
 ### Future Support is Coming for:
   - Java
   - YAML
+
+
+<br>
+
+## Here is What Developer's Dojo Looks Like:
+
+  - ### Ignore Files:
+    ![alt text](res/prev-ignore-support.png)

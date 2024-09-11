@@ -19,31 +19,31 @@
         "titleBar.activeBackground": "#111111",
         "titleBar.inactiveBackground": "#32302A",
         "titleBar.activeForeground": "#DDDDDD",
-        "titleBar.border": "#0F0005",
+        "titleBar.border": "#140603",
         "titleBar.inactiveForeground": "#7292AE",
 
         // * Side-bar
         "sideBar.background": "#161617",
         "sideBarSectionHeader.foreground": "#BBBBBB",
-        "sideBarSectionHeader.border": "#0F0005",
+        "sideBarSectionHeader.border": "#140603",
         "sideBarSectionHeader.background": "#162640",
 
         // * Activity-bar
         "activityBar.background": "#141312",
         "activityBar.activeFocusBorder": "#DDDDDD",
-        "activityBar.border": "#0F0005",
-        "activityBar.dropBorder": "#200",
+        "activityBar.border": "#140603",
         "activityBar.foreground": "#DDDDDD",
         "activityBar.inactiveForeground": "#777777",
         "activityBar.activeBorder": "#22BBDD",
         "activityBar.activeBackground": "#00000000",
 
         // * Tabs
-        "tab.activeBackground": "#074477",
+        "tab.activeBackground": "#082E55",
         "tab.inactiveBackground": "#12121A",
         "editorGroupHeader.tabsBackground": "#141210",
+        "tab.hoverBackground": "#0450B0",
+        "tab.border": "#140603",
         // "tab.selectedBackground": "",
-        // "tab.hoverBackground": "",
         // "tab.unfocusedActiveBackground": "",
         // "tab.unfocusedHoverBackground": "",
         // "tab.unfocusedInactiveBackground": "",
@@ -55,7 +55,6 @@
         // "tab.activeBorderTop": "",
         // "tab.activeForeground": "",
         // "tab.activeModifiedBorder": "",
-        // "tab.border": "",
         // "tab.dragAndDropBorder": "",
         // "tab.hoverBorder": "",
         // "tab.hoverForeground": "",
@@ -82,7 +81,7 @@
         // * Badges
         "activityBarBadge.background": "#0E3355",
         "activityBarBadge.foreground": "#77DDFF",
-        "contrastBorder": "#0F0005",
+        "contrastBorder": "#140603",
 
         // * Status-bar
         "statusBar.background": "#0F2740",
@@ -100,13 +99,62 @@
         "gitDecoration.renamedResourceForeground": "#AA90FF",
         "gitDecoration.stageModifiedResourceForeground": "#12C4DD"
     },
-
+    // Hello world
     "tokenColors": [
+        /*
+
+
+
+        ******************************************
+            Comments Highlighting
+        ******************************************/
         {
+            "name": "Comments Default",
+            "scope": "comment",
+            "settings": {
+                "foreground": "#727270",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Block Comments",
+            "scope": "comment.block",
+            "settings": {
+                "foreground": "#307040",
+                "fontStyle": ""
+            }
+        },
+        /**
+
+
+
+        ******************************************
+            JSON & JSONC Textmate Tokens
+        ******************************************/
+        {
+            "name": "JSON Properties Lv 1",
             "scope": "support.type.property-name.json",
             "settings": {
                 "foreground": "#66AADD",
                 "fontStyle": ""
+            }
+        },
+
+        {
+            "name": "Ignore Files FG",
+            "scope": "source.ignore",
+            "settings": {
+                "foreground": "#A0A0A0",
+                "fontStyle": ""
+            }
+        },
+
+        {
+            "name": "Comment Headers",
+            "scope": "comment.line.number-sign.ignore",
+            "settings": {
+                "foreground": "#449955",
+                "fontStyle": "underline bold"
             }
         }
     ]
