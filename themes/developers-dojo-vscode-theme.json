@@ -1,0 +1,73 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "type": "dark",
+  "semanticHighlighting": false,
+
+  "colors": {
+    // * Editor (everything within it except language-specific syntax)
+    "editor.background": "#1A1816",
+    "editor.selectionHighlightBackground": "#0090FF80",
+    "editor.selectionBackground": "#0090FF80",
+    "editor.selectionForeground": "#EEEEEE",
+    "editor.lineHighlightBackground": "#00000000",
+    "editor.lineHighlightBorder": "#00000000",
+    "editor.hoverHighlightBackground": "#0090FF80",
+    "editor.selectionHighlightBorder": "#FFFFFF44",
+    "editor.wordHighlightBackground": "#0090FF80",
+
+    // * Title-bar
+    "titleBar.activeBackground": "#111111",
+    "titleBar.inactiveBackground": "#32302A",
+    "titleBar.activeForeground": "#DDDDDD",
+    "titleBar.border": "#0F0005",
+    "titleBar.inactiveForeground": "#7292AE",
+
+    // * Side-bar
+    "sideBar.background": "#161617",
+    "sideBarSectionHeader.foreground": "#BBBBBB",
+    "sideBarSectionHeader.border": "#0F0005",
+    "sideBarSectionHeader.background": "#162640",
+
+    // * Activity-bar
+    "activityBar.background": "#141312",
+    "activityBar.activeFocusBorder": "#DDDDDD",
+    "activityBar.border": "#0F0005",
+    "activityBar.dropBorder": "#200",
+    "activityBar.foreground": "#DDDDDD",
+    "activityBar.inactiveForeground": "#777777",
+    "activityBar.activeBorder": "#22BBDD",
+    "activityBar.activeBackground": "#00000000",
+
+    // * Badges
+    "activityBarBadge.background": "#0E3355",
+    "activityBarBadge.foreground": "#77DDFF",
+    "contrastBorder": "#0F0005",
+
+    // * Status-bar
+    "statusBar.background": "#0F2740",
+    "statusBar.border": "#080800",
+    "statusBar.foreground": "#90CAEC",
+
+    // * Git Decorations
+    "gitDecoration.modifiedResourceForeground": "#12C4DD",
+    "gitDecoration.addedResourceForeground":"#99CC77",
+    "gitDecoration.conflictingResourceForeground":"#EE4499",
+    "gitDecoration.deletedResourceForeground": "#D99999",
+    "gitDecoration.untrackedResourceForeground": "#99CC77",
+    "gitDecoration.ignoredResourceForeground": "#888888",
+    "gitDecoration.stageDeletedResourceForeground": "#D99999",
+    "gitDecoration.renamedResourceForeground": "#AA90FF",
+    "gitDecoration.stageModifiedResourceForeground": "#12C4DD"
+
+  },
+
+  "tokenColors": [
+    {
+      "scope": "support.type.property-name.json",
+      "settings": {
+        "foreground": "#66AADD",
+        "fontStyle": ""
+      }
+    }
+  ]
+}
