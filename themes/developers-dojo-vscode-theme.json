@@ -4,7 +4,13 @@
     "semanticHighlighting": false,
 
     "colors": {
-        // * Editor (everything within it except language-specific syntax)
+                /*
+
+--------------------------------------------------------------------------
+  * EDITOR
+        - Includes everything in the editor that isn't
+        syntax, except for matching bracket pairs.
+-------------------------------------------------------------------------- */
         "editor.background": "#1A1816",
         "editor.selectionHighlightBackground": "#0090FF80",
         "editor.selectionBackground": "#0090FF80",
@@ -14,48 +20,55 @@
         "editor.hoverHighlightBackground": "#0090FF80",
         "editor.selectionHighlightBorder": "#FFFFFF44",
         "editor.wordHighlightBackground": "#0090FF80",
+        /*
 
-        // * Title-bar
+--------------------------------------------------------------------------
+  * TITLE-BAR
+-------------------------------------------------------------------------- */
         "titleBar.activeBackground": "#111111",
         "titleBar.inactiveBackground": "#32302A",
         "titleBar.activeForeground": "#DDDDDD",
-        "titleBar.border": "#140603",
+        "titleBar.border": "#0F0000",
         "titleBar.inactiveForeground": "#7292AE",
+        /*
 
-        // * Side-bar
+--------------------------------------------------------------------------
+  * SIDE-BAR
+-------------------------------------------------------------------------- */
         "sideBar.background": "#161617",
         "sideBarSectionHeader.foreground": "#BBBBBB",
-        "sideBarSectionHeader.border": "#140603",
+        "sideBarSectionHeader.border": "#0F0000",
         "sideBarSectionHeader.background": "#162640",
+        /*
 
-        // * Activity-bar
+--------------------------------------------------------------------------
+  * ACTIVITY-BAR
+-------------------------------------------------------------------------- */
         "activityBar.background": "#141312",
         "activityBar.activeFocusBorder": "#DDDDDD",
-        "activityBar.border": "#140603",
-        "activityBar.foreground": "#DDDDDD",
+        "activityBar.border": "#0F0000",
+        "activityBar.foreground": "#2CCAFF",
         "activityBar.inactiveForeground": "#777777",
-        "activityBar.activeBorder": "#22BBDD",
+        "activityBar.activeBorder": "#2CCAFF",
         "activityBar.activeBackground": "#00000000",
+        /*
 
-        // * Tabs
-        "tab.activeBackground": "#082E55",
-        "tab.inactiveBackground": "#12121A",
-        "editorGroupHeader.tabsBackground": "#141210",
+--------------------------------------------------------------------------
+  * EDITOR TABS & GROUPS
+-------------------------------------------------------------------------- */
+        "tab.activeBackground": "#032C70",
+        "tab.inactiveBackground": "#0F1423",
         "tab.hoverBackground": "#0450B0",
-        "tab.border": "#140603",
-        // "tab.selectedBackground": "",
-        // "tab.unfocusedActiveBackground": "",
-        // "tab.unfocusedHoverBackground": "",
-        // "tab.unfocusedInactiveBackground": "",
-        // "editorGroup.dropBackground": "",
-        // "editorGroup.dropIntoPromptBackground": "",
-        // "editorGroup.emptyBackground":"",
-        // "editorGroupHeader.noTabsBackground":"",
-        // "tab.activeBorder": "",
-        // "tab.activeBorderTop": "",
-        // "tab.activeForeground": "",
-        // "tab.activeModifiedBorder": "",
-        // "tab.dragAndDropBorder": "",
+        "tab.border": "#0F0000",
+        "tab.selectedBackground": "#0450B0",
+        "editorGroupHeader.tabsBackground": "#141210",
+        "editorGroup.dropBackground": "#80331A",
+        "editorGroupHeader.tabsBorder": "#0F0000",
+
+        "tab.activeBorder": "#000",
+        "tab.activeBorderTop": "#2CCAFF",
+        "tab.activeForeground": "#DDDDDD",
+        "tab.dragAndDropBorder": "#DD6040",
         // "tab.hoverBorder": "",
         // "tab.hoverForeground": "",
         // "tab.inactiveForeground": "",
@@ -63,32 +76,55 @@
         // "tab.lastPinnedBorder": "",
         // "tab.selectedBorderTop": "",
         // "tab.selectedForeground": "",
-        // "tab.unfocusedActiveBorder": "",
-        // "tab.unfocusedActiveBorderTop": "",
-        // "tab.unfocusedActiveForeground": "",
-        // "tab.unfocusedActiveModifiedBorder": "",
-        // "tab.unfocusedHoverBorder": "",
-        // "tab.unfocusedHoverForeground": "",
-        // "tab.unfocusedInactiveForeground": "",
-        // "tab.unfocusedInactiveModifiedBorder": "",
-        // "editorGroupHeader.tabsBorder":"",
-        // "editorGroup.border":"",
-        // "editorGroup.dropIntoPromptBorder": "",
-        // "editorGroup.dropIntoPromptForeground": "",
-        // "editorGroup.focusedEmptyBorder":"",
-        // "editorGroupHeader.border":"",
 
-        // * Badges
+        "editorGroupHeader.border": "#0F0000",
+        /*
+
+
+--------------------------------------------------------------------------
+    * ICONS & BADGES
+-------------------------------------------------------------------------- */
+        "icon.foreground": "#2CCAFF",
         "activityBarBadge.background": "#0E3355",
-        "activityBarBadge.foreground": "#77DDFF",
-        "contrastBorder": "#140603",
+        "activityBarBadge.foreground": "#2CCAFF",
+        "contrastBorder": "#0F0000",
+        /*
 
-        // * Status-bar
-        "statusBar.background": "#0F2740",
-        "statusBar.border": "#080800",
-        "statusBar.foreground": "#90CAEC",
 
-        // * Git Decorations
+--------------------------------------------------------------------------
+  * STATUS-BAR
+-------------------------------------------------------------------------- */
+        // > Group: 'STD'
+        "statusBar.background": "#07172C",
+        "statusBar.foreground": "#77CC88",
+        "statusBar.border": "#FFFFFF22",
+        // > Group: 'DEBUG'
+        "statusBar.debuggingBackground": "#181110",
+        "statusBar.debuggingForeground": "#77DD88",
+        "statusBar.debuggingBorder": "#FFFFFF11",
+        // > Group: 'NO FLDR'
+        "statusBar.noFolderBackground": "#202C40",
+        "statusBar.noFolderForeground": "#AAAAAA",
+        "statusBar.noFolderBorder": "#0F0000",
+        "statusBar.focusBorder": "#00CC55",
+        "statusBarItem.activeBackground": "#032C70",
+        // > Group: Item (Error)
+        "statusBarItem.errorBackground": "#400E1C",
+        "statusBarItem.errorForeground": "#D999AA",
+        "statusBarItem.errorHoverBackground": "#FF000033",
+        // > Group Item: (Warning)
+        "statusBarItem.warningBackground": "#605418",
+        "statusBarItem.warningForeground": "#DDDD99",
+        "statusBarItem.warningHoverBackground":"#FFDD0022",
+        "statusBarItem.focusBorder": "#00BB55",
+        "statusBarItem.hoverBackground": "#11EE5555",
+        "statusBarItem.hoverForeground": "#22FF77", // Hover
+ /*
+
+
+--------------------------------------------------------------------------
+  * Git Decorations
+-------------------------------------------------------------------------- */
         "gitDecoration.modifiedResourceForeground": "#12C4DD",
         "gitDecoration.addedResourceForeground": "#99CC77",
         "gitDecoration.conflictingResourceForeground": "#EE4499",
@@ -97,7 +133,12 @@
         "gitDecoration.ignoredResourceForeground": "#888888",
         "gitDecoration.stageDeletedResourceForeground": "#D99999",
         "gitDecoration.renamedResourceForeground": "#AA90FF",
-        "gitDecoration.stageModifiedResourceForeground": "#12C4DD"
+        "gitDecoration.stageModifiedResourceForeground": "#12C4DD",
+
+
+        // ? unknown
+        "editorGroup.border": "#FF33EE",
+        "actionBar.toggledBackground": "#FF33EE"
     },
     // Hello world
     "tokenColors": [
@@ -135,7 +176,7 @@
             "name": "JSON Properties Lv 1",
             "scope": "support.type.property-name.json",
             "settings": {
-                "foreground": "#66AADD",
+                "foreground": "#4AA4F4",
                 "fontStyle": ""
             }
         },
@@ -144,7 +185,7 @@
             "name": "Ignore Files FG",
             "scope": "source.ignore",
             "settings": {
-                "foreground": "#A0A0A0",
+                "foreground": "#929292",
                 "fontStyle": ""
             }
         },
@@ -153,7 +194,7 @@
             "name": "Comment Headers",
             "scope": "comment.line.number-sign.ignore",
             "settings": {
-                "foreground": "#449955",
+                "foreground": "#11928C",
                 "fontStyle": "underline bold"
             }
         }

@@ -3,7 +3,7 @@
   "displayName": "Developer's Dojo",
   "description": "",
   "version": "1.8.0",
-  "publisher": "JAYD3V",
+  "publisher": "JAYD3V", 
   "license": "MIT",
   "icon": "res/icon.png",
   "galleryBanner": {
